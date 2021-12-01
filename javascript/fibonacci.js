@@ -1,5 +1,9 @@
 function fibonacci(num) {
-  // type your code here
+  let [a, b] = [0, 1]
+  while (num-- > 0) {
+    [a, b] = [b, a + b]
+  }
+  return a
 }
 
 if (require.main === module) {
